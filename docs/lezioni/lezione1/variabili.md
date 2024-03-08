@@ -1,5 +1,7 @@
 # Variabili
+
 ## Variabili
+
 Immagina che una variabile sia come una scatola nella quale puoi mettere qualsiasi cosa tu voglia: giocattoli, cibo,
 vestiti, qualsiasi cosa! Ora, in Python, una variabile è simile a questa scatola. Può contenere diversi tipi di dati,
 come numeri, parole, persino liste di cose! Ecco un esempio di come creare una variabile:
@@ -45,62 +47,11 @@ Questo perché abbiamo cambiato il valore della variabile `nome` da "Mario" a "L
 Le variabili possono contenere diversi tipi di dati, come numeri, parole, liste e molto altro. Vedremo più avanti come
 utilizzare le variabili con i diversi tipi di dati.
 
+## 🧩 Esercizio 1.2
 
-## Input
+Scrivi un programma che crei due variabili:
 
-Ora che sappiamo come creare e modificare le variabili, possiamo chiedere all'utente di inserire un valore per una
-variabile. Per fare ciò, possiamo usare la funzione `input()`:
+- una con il tuo nome
+- una con la tua età
 
-```python
-nome = input("Inserisci il tuo nome: ")
-print(nome)
-```
-
-In questo esempio, chiediamo all'utente di inserire il suo nome e lo memorizziamo nella variabile `nome`. Poi
-lo stampiamo a schermo.
-
-Quando eseguiamo questo programma, vedremo qualcosa del genere:
-
-```
-Inserisci il tuo nome: Mario
-Mario
-```
-
-Come puoi vedere, il programma chiede all'utente di inserire il suo nome e poi lo stampa a schermo.
-
-Se vogliamo chiedere all'utente di inserire più di un valore, possiamo farlo in questo modo:
-
-```python
-nome = input("Inserisci il tuo nome: ")
-cognome = input("Inserisci il tuo cognome: ")
-print(nome)
-print(cognome)
-```
-
-Ora, quando eseguiamo questo programma, vedremo qualcosa del genere:
-
-```
-Inserisci il tuo nome: Mario
-Inserisci il tuo cognome: Rossi
-Mario
-Rossi
-```
-
-
-Per stampare tutto in una sola riga, possiamo usare il simbolo `+` per unire le parole:
-
-```python
-nome = input("Inserisci il tuo nome: ")
-cognome = input("Inserisci il tuo cognome: ")
-print("Ciao", nome + " " + cognome)
-```
-
-Ora, quando eseguiamo questo programma, vedremo qualcosa del genere:
-
-```
-Inserisci il tuo nome: Mario
-Inserisci il tuo cognome: Rossi
-Ciao Mario Rossi
-```
-
-
+Poi, stampa il tuo nome e la tua età a schermo.

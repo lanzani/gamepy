@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "GamePy"
-  text: "Impara a programmare giocando con python"
-  tagline: My great project tagline
+  text: "Impara a programmare giochi con python"
+  tagline: Impara a programmare giochi con python
   actions:
     - theme: brand
       text: Markdown Examples
