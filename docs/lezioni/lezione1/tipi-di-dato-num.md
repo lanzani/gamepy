@@ -50,34 +50,54 @@ a = a + 3
 print(a)  # Stampa 8
 ```
 
-## Confronto tra Numeri
+[//]: # (## Confronto tra Numeri)
 
-Anche i numeri, come le stringhe, possono essere confrontati. Ad esempio, possiamo confrontare se un numero è maggiore,
-minore o uguale a un altro numero.
+[//]: # ()
+[//]: # (Anche i numeri, come le stringhe, possono essere confrontati. Ad esempio, possiamo confrontare se un numero è maggiore,)
 
-Gli operatori di confronto principali sono:
+[//]: # (minore o uguale a un altro numero.)
 
-| Operatore | Descrizione       |
-|-----------|-------------------|
-| `==`      | Uguale            |
-| `!=`      | Diverso           |
-| `>`       | Maggiore          |
-| `<`       | Minore            |
-| `>=`      | Maggiore o uguale |
-| `<=`      | Minore o uguale   |
+[//]: # ()
+[//]: # (Gli operatori di confronto principali sono:)
 
-```python
-numero = 5
+[//]: # ()
+[//]: # (| Operatore | Descrizione       |)
 
-if numero > 3:
-    print("Il numero è maggiore di 3")
-else:
-    print("Il numero non è maggiore di 3")
-```
+[//]: # (|-----------|-------------------|)
 
-In questo caso, il programma stamperà "Il numero è maggiore di 3".
+[//]: # (| `==`      | Uguale            |)
 
-Se  `numero` fosse `2`, il programma stamperà "Il numero non è maggiore di 3".
+[//]: # (| `!=`      | Diverso           |)
+
+[//]: # (| `>`       | Maggiore          |)
+
+[//]: # (| `<`       | Minore            |)
+
+[//]: # (| `>=`      | Maggiore o uguale |)
+
+[//]: # (| `<=`      | Minore o uguale   |)
+
+[//]: # ()
+[//]: # (```python)
+
+[//]: # (numero = 5)
+
+[//]: # ()
+[//]: # (if numero > 3:)
+
+[//]: # (    print&#40;"Il numero è maggiore di 3"&#41;)
+
+[//]: # (else:)
+
+[//]: # (    print&#40;"Il numero non è maggiore di 3"&#41;)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (In questo caso, il programma stamperà "Il numero è maggiore di 3".)
+
+[//]: # ()
+[//]: # (Se  `numero` fosse `2`, il programma stamperà "Il numero non è maggiore di 3".)
 
 
 

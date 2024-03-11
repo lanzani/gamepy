@@ -41,29 +41,39 @@ Ora, quando eseguiamo questo programma, vedremo qualcosa del genere:
 Alice Rossi
 ```
 
-### Ripetizione di Stringhe
+[//]: # (### Ripetizione di Stringhe)
 
-Per ripetere una stringa, possiamo usare il simbolo `*`:
+[//]: # ()
+[//]: # (Per ripetere una stringa, possiamo usare il simbolo `*`:)
 
-```python
-nome = "Alice"
-print(nome * 3)
-```
+[//]: # ()
+[//]: # (```python)
 
-Ora, quando eseguiamo questo programma, vedremo qualcosa del genere:
+[//]: # (nome = "Alice")
 
-```
-AliceAliceAlice
-```
+[//]: # (print&#40;nome * 3&#41;)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (Ora, quando eseguiamo questo programma, vedremo qualcosa del genere:)
+
+[//]: # ()
+[//]: # (```)
+
+[//]: # (AliceAliceAlice)
+
+[//]: # (```)
 
 ## 🧩 Esercizio 1.3
 
 Scrivi un programma che crei una variabile con il tuo nome. Poi, stampa a schermo la stringa "Ciao" seguita dal tuo
 nome.
 
-## 🧩 Esercizio 1.4
+[//]: # (## 🧩 Esercizio 1.4)
 
-Scrivi un programma che crei una variabile con il tuo nome. Poi, stampa a schermo quella variabile 10 volte.
+[//]: # ()
+[//]: # (Scrivi un programma che crei una variabile con il tuo nome. Poi, stampa a schermo quella variabile 10 volte.)
 
 
 

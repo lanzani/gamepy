@@ -25,7 +25,7 @@ Quindi, come prima cosa dobbiamo chiedere all'utente di rispondere a una domanda
 `input()` e quello che l'utente scrive va salvato in una variabile chiamata `risposta`.
 
 ```python:line-numbers
-risposta = input("Qual'è la capitale dell'Italia? ")
+risposta = input("Qual è la capitale dell'Italia? ")
 ```
 
 
@@ -38,7 +38,7 @@ Per controllare se la risposta dell'utente è corretta, useremo un'istruzione `i
 "Roma", stamperemo "Risposta esatta!".
 
 ```python:line-numbers {3-4}
-risposta = input("Qual'è la capitale dell'Italia? ")
+risposta = input("Qual è la capitale dell'Italia? ")
 
 if risposta == "Roma":
     print("Risposta esatta!")
@@ -53,7 +53,7 @@ Per controllare se la risposta dell'utente è sbagliata, useremo un'istruzione `
 uguale a "Roma", stamperemo "Risposta esatta!", altrimenti stamperemo "Risposta sbagliata!".
 
 ```python:line-numbers  {5-6}
-risposta = input("Qual'è la capitale dell'Italia? ")
+risposta = input("Qual è la capitale dell'Italia? ")
 
 if risposta == "roma":
     print("Risposta esatta!")
@@ -66,14 +66,14 @@ else:
 Ora prova ad aggiungere altre domande e al programma. Ad esempio:
 
 ```python:line-numbers
-risposta = input("Qual'è la capitale dell'Italia? ")
+risposta = input("Qual è la capitale dell'Italia? ")
 
 if risposta == "Roma":
     print("Risposta esatta!")
 else:
     print("Risposta sbagliata!")
 
-risposta = input("Qual'è la capitale della Francia? ")
+risposta = input("Qual è la capitale della Francia? ")
 
 if risposta == "Parigi":
     print("Risposta esatta!")
