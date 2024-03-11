@@ -45,8 +45,7 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            {text: 'Lezioni', link: '/lezioni/'},
-            {text: 'Examples', link: '/markdown-examples'}
+            {text: 'Lezioni', link: '/lezioni/'}
         ],
 
         sidebar: {
