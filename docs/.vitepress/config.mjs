@@ -2,17 +2,25 @@ import {defineConfig} from 'vitepress'
 
 const lezioniSidebar = [
     {text: "Lezioni", link: "/lezioni/"},
+
     {
-        text: "Lezione 1", collapsed: false, items: [
+        text: "Lezione 1", collapsed: true, items: [
             {text: "📗 Introduzione", link: "/lezioni/lezione1/introduzione"},
             {text: "📘 Input e Output", link: "/lezioni/lezione1/input-output"},
             {text: "📘 Variabili", link: "/lezioni/lezione1/variabili"},
             {text: "📐 Tipi di Dato: Stringhe", link: "/lezioni/lezione1/tipi-di-dato-str"},
-            {text: "📘 Input", link: "/lezioni/lezione1/input"},
+            {text: "📘 Input", link: "/lezioni/lezione1/input"}
+        ]
+    },
+    {
+        text: "Lezione 2", collapsed: false, items: [
             {text: "📘 Condizioni", link: "/lezioni/lezione1/condizioni"},
-            {text: "🎮 Progetto Quiz - 1", link: "/lezioni/lezione1/progetto1-1"},
+            {text: "🎮 Quiz - 1", link: "/lezioni/lezione1/progetto1-1"},
             {text: "📐 Tipi di Dato: Numeri", link: "/lezioni/lezione1/tipi-di-dato-num"},
-            {text: "🎮 Progetto Quiz - 2", link: "/lezioni/lezione1/progetto1-2"},
+            {text: "🎮 Quiz - 2", link: "/lezioni/lezione1/progetto1-2"},
+            {text: "🎮 Carta, forbice, sasso - 1", link: "/lezioni/lezione2/progetto2-1"},
+            {text: "📘 Condizioni 2", link: "/lezioni/lezione2/condizioni2"},
+            {text: "🎮 Carta, forbice, sasso - 2", link: "/lezioni/lezione2/progetto2-2"},
 
 
         ]
@@ -45,7 +53,8 @@ export default defineConfig({
     themeConfig: {
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            {text: 'Lezioni', link: '/lezioni/'}
+            {text: 'Lezioni', link: '/lezioni/'},
+            {text: "Online Python", link: "https://www.online-python.com/"},
         ],
 
         sidebar: {
