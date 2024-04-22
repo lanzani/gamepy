@@ -1,17 +1,10 @@
 # 📘 Cicli
 
-Nella pagina precedente la tartaruga ha attraversato un labirinto grazie alle istruzioni che le abbiamo dato.
+Nelle lezioni precedenti abbiamo visto un modo per far ripetere delle istruzioni all'infinito: il ciclo `while True`.
 
-Le tre parti del labirinto (verde, blu e rossa) però sono identiche e per superare ciascuna parte servono le stesse
-istruzioni.
+Esiste un modo per ripetere certe istruzioni un certo numero di volte?
 
-Esiste un modo per evitare di ripetere lo stesso codice tre volte?
-
-Sì esiste: quando vogliamo ripetere lo stesso codice più volte possiamo usare un _ciclo for_.
-
-Un ciclo for è un blocco di codice che viene eseguito tante volte quanto specificato.
-
-Per esempio, se vogliamo far disegnare alla tartaruga un quadrato, prima facevamo così:
+Facciamo un esempio: se vogliamo far disegnare alla tartaruga un quadrato, si può fare così:
 
 ```python:line-numbers
 import turtle
@@ -28,13 +21,18 @@ tartaruga.forward(100)
 tartaruga.right(90)
 ```
 
-Il codice disegna un quadrato, ma ripetiamo le stesse istruzioni quattro volte.
+Il codice disegna un quadrato, è vero, ma ripetiamo le stesse istruzioni quattro volte. Possiamo scrivere solo le
+istruzioni necessarie per disegnare un lato del quadrato e poi ripeterle quattro volte?
 
-Con un ciclo for possiamo scrivere lo stesso codice in modo più compatto. Per prima cosa identifichiamo le istruzioni che ripetiamo:
+Si, si può fare, ma non con un ciclo `while True`. Questo perchè il ciclo `while True` ripete le istruzioni
+all'infinito, mentre noi vogliamo ripeterle un numero di volte preciso, ossia quatto nel caso del quadrato.
+
+Iniziamo con l'identificare le istruzioni che vengono ripetute:
+
 - `tartaruga.forward(100)`
 - `tartaruga.right(90)`
 
-Poi scriviamo un ciclo for che ripete queste istruzioni quattro volte:
+Una volta identificate le istruzioni ripetute possiamo scrivere un ciclo `for` attorno a queste:
 
 ```python:line-numbers
 import turtle
@@ -46,5 +44,14 @@ for i in range(4):
   tartaruga.right(90) 
 ```
 
-Il risultato è lo stesso, ma il codice è più facile da scrivere.
+Il ciclo `for` ripete le istruzioni all'interno di esso un numero di volte pari al valore specificato tra le parentesi
+tonde dopo la parola `range`.
+
+Nel nostro caso, `range(4)` significa che le istruzioni all'interno del ciclo `for` vengono ripetute quattro volte, e
+dunque verrà disegnato un quadrato.
+
+Si legge: 
+> "per 4 volte, esegui le seguenti istruzioni".
+
+Il risultato è lo stesso, ma il codice è più compatto e più facile da scrivere.
 

@@ -1,99 +1,179 @@
-# 🎮 Labirinto - 2
+# Labirinto 2
 
-Abbiamo visto che possiamo far ripetere alla tartaruga le stesse istruzioni più volte usando un ciclo for.
+Riprendiamo il gioco del labirinto che abbiamo programmato nella lezione precedente.
 
-Nel labirinto che abbiamo disegnato, le tre parti del labirinto (verde, blu e rossa) sono identiche e per superare
-ciascuna parte servono le stesse istruzioni.
+In quella lezione abbiamo fatto muovere la tartaruga grazie a delle istruzioni scritte nel codice. Ora invece proviamo a
+far muovere la tartaruga dicendole tramite input la direzione in cui muoversi e la distanza da percorrere.
 
-Possiamo dunque usare un ciclo for per evitare di ripetere lo stesso codice tre volte.
+## Prepariamo il programma
 
-## Superare la prima sezione del labirinto
+Andiamo sul sito [trinket.io/turtle](https://trinket.io/turtle) e creiamo un nuovo file chiamato `labirinto.py`.
+Nel nuovo file incolliamo il seguente codice:
 
-Per prima cosa troviamo le istruzioni che servono alla tartaruga per superare la parte verde del labirinto:
+```python:line-numbers
+import turtle
 
-```python
-tartaruga.forward(65)
-tartaruga.left(90)
-tartaruga.forward(120)
-tartaruga.right(90)
-tartaruga.forward(50)
-tartaruga.right(90)
-tartaruga.forward(120)
-tartaruga.left(90)
-```
+screen = turtle.Screen()
+screen.tracer(0)
 
-![img_4.png](img_4.png)
+mazeWidth=150
 
-## Ripetere le istruzioni
+myMaze = turtle.Turtle()
+myMaze.width(5)
+myMaze.hideturtle()
 
-Ora che abbiamo le istruzioni per superare la prima parte del labirinto, possiamo usare un ciclo for per ripeterle tre
-volte.
+myMaze.speed(0)
 
-```python
-for i in range(3):
-  tartaruga.forward(65)
-  tartaruga.left(90)
-  tartaruga.forward(120)
-  tartaruga.right(90)
-  tartaruga.forward(50)
-  tartaruga.right(90)
-  tartaruga.forward(120)
-  tartaruga.left(90)
-```
+myMaze.penup()
+myMaze.goto(-mazeWidth,100)
 
-![img_5.png](img_5.png)
 
-## Fare uscire la tartaruga dal labirinto
-
-Per far uscire la tartaruga dal labirinto, dobbiamo farla andare dritta ancora una volta, fino alla fine.
-
-Questa istruzione va aggiunta dopo il ciclo for, perchè non vogliamo che venga ripetuta ogni volta che la tartaruga
-supera una parte del labirinto ma solo alla fine.
-
-```python
-for i in range(3):
-  tartaruga.forward(65)
-  tartaruga.left(90)
-  tartaruga.forward(120)
-  tartaruga.right(90)
-  tartaruga.forward(50)
-  tartaruga.right(90)
-  tartaruga.forward(120)
-  tartaruga.left(90)
+def drawMazeSection(color):
   
-tartaruga.forward(65)
+  myMaze.color(color)
+  myMaze.pendown()
+  myMaze.forward(mazeWidth)
+  myMaze.penup()
+  myMaze.forward(40)
+  myMaze.pendown()
+  myMaze.forward(mazeWidth)
+  myMaze.right(90)
+  myMaze.forward(100)
+  myMaze.right(90)
+  myMaze.forward(mazeWidth)
+  myMaze.penup()
+  myMaze.forward(40)
+  myMaze.pendown()
+  myMaze.forward(mazeWidth)
+  myMaze.right(90)
+  myMaze.forward(100)
+  myMaze.right(90)
+  x,y = myMaze.pos()
+  myMaze.penup()  
+  myMaze.goto(x, y-50)
+  myMaze.pendown()
+  myMaze.forward(30)
+  myMaze.penup()
+  myMaze.forward(40)
+  myMaze.pendown()
+  myMaze.forward(200)
+  myMaze.penup()
+  myMaze.forward(40)
+  myMaze.pendown()
+  myMaze.forward(30)
+  myMaze.penup()
+  myMaze.goto(x,y-110)
+
+for color in ["#FF0000"]:
+  drawMazeSection(color)
+  
+screen.tracer(1)
 ```
 
-![img_7.png](img_7.png)
+Torniamo sul file `main.py` e incolliamo quanto segue:
 
-## Scegliere il colore della tartaruga
+```python:line-numbers
+import turtle
+import labirinto
 
-Possiamo cambiare il colore della tartaruga usando la funzione `color`.
+tartaruga = turtle.Turtle()
+tartaruga.speed(0)
+tartaruga.shape('turtle')
+tartaruga.penup()
+tartaruga.goto(20,-180)
+tartaruga.pendown()
+tartaruga.left(90)
+tartaruga.speed(3)
 
-Per esempio, per far diventare la tartaruga rossa possiamo scrivere:
+# Inizia da qui sotto:
+
+```
+
+Ora dobbiamo scrivere un programma che permetta di far muovere la tartaruga attraverso il labirinto secondo le nostre
+istruzioni.
+
+## Muovere la tartaruga
+
+Per far muovere la tartaruga, dobbiamo fornirle:
+
+- la direzione in cui deve andare
+- la distanza che deve percorrere
+
+Per prima cosa chiediamo all'utente in che direzione vuole andare. Le direzioni possibili sono:
+
+- avanti
+- indietro
+- destra
+- sinistra
+
+Associamo una lettera per ciascuna direzione:
+
+- `a` per avanti
+- `i` per indietro
+- `d` per destra
+- `s` per sinistra
+
+Stiamo di fatto creando i controlli del nostro gioco.
+
+Chiediamo all'utente la direzione in cui vuole andare e mettiamo la sua risposta in una scatola chiamata `direzione`.
+Le possibili risposte sono `a`, `i`, `d` e `s`; come abbiamo definito sopra.
 
 ```python
-tartaruga.color("red")
+direzione = input("In che direzione vuoi andare?")
 ```
 
-Per far diventare la tartaruga verde possiamo scrivere:
+Ora dobbiamo chiedere all'utente i passi che vuole far percorrere alla tartaruga.
 
 ```python
-tartaruga.color("green")
+numero_passi = input("Quanti passi vuoi fare?")
 ```
 
-e così via.
+Adesso che abbiamo queste informazioni dobbiamo controllare il contenuto della scatola `direzione` e fare muovere la
+tartaruga in quella direzione di tanti passi quanti indicati nella scatola `numero_passi`.
 
-### 🧩 Esercizio
+```python
+if direzione =="a":
+  tartaruga.forward(numero_passi)
+ 
+if direzione =="i":
+    tartaruga.backward(numero_passi)
 
-Scrivi un programma che chieda all'utente il colore della tartaruga prima di farle attraversare il labirinto.
+if direzione =="d":
+    tartaruga.right(90)
+    tartaruga.forward(numero_passi)
 
-![img_16.png](img_16.png)
+if direzione =="s":
+    tartaruga.left(90)
+    tartaruga.forward(numero_passi)
+    
+```
 
-### 🧩 Esercizio
+Se proviamo a eseguire il programma ci verrà chiesto in che direzione vogliamo andare e quanti passi vogliamo fare una
+sola volta. Questo non è sufficiente per attraversare il labirinto. 
 
-Scrivi un programma che chieda all'utente il colore della tartaruga ogni volta che la tartaruga supera una parte del
-labirinto.
+Per far si che il programma possa ripetere le domande più volte, dobbiamo mettere gli _input_ e gli `if` in un ciclo `while True`.
 
-![img_13.png](img_13.png)
-![img_14.png](img_14.png)
+Il ciclo `while True` ripete all'infinito tutte le istruzioni al suo interno.
+
+```python
+while True:
+  direzione = input("in che direzione vuoi andare?")
+  numero_passi = int(input("quanti passi vuoi fare?"))
+  
+  if direzione =="a":
+    tartaruga.forward(numero_passi)
+ 
+  if direzione =="i":
+    tartaruga.backward(numero_passi)
+
+  if direzione =="d":
+    tartaruga.right(90)
+    tartaruga.forward(numero_passi)
+
+  if direzione =="s":
+    tartaruga.left(90)
+    tartaruga.forward(numero_passi)
+```
+
+Se proviamo a eseguire il programma ora, ci verrà chiesto in che direzione vogliamo andare e quanti passi vogliamo fare
+all'infinito, permettendoci dunque di attraversare il labirinto.
