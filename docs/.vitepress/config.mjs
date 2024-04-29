@@ -39,10 +39,19 @@ const lezioniSidebar = [
         ]
     },
     {
-        text: "Lezione 5", collapsed: false, items: [
+        text: "Lezione 5", collapsed: true, items: [
             {text: "🎮 Labirinto - 2", link: "/lezioni/lezione4/labirinto-2"},
+            {text: "🎮 Gara", link: "/lezioni/lezione5/gara-1"}
+            // {text: "📘 Cicli", link: "/lezioni/lezione4/cicli"},
+            // {text: "🎮 Labirinto - 2", link: "/lezioni/lezione4/labirinto-2"},
+
+        ]
+    },
+    {
+        text: "Lezione 6", collapsed: false, items: [
             {text: "🎮 Gara", link: "/lezioni/lezione5/gara-1"},
-            {text: "📘 Cicli", link: "/lezioni/lezione4/cicli"},
+            // {text: "🎮 Lettere", link: "/lezioni/lezione6/lettere-1"},
+            {text: "📘 Cicli", link: "/lezioni/lezione4/cicli"}
             // {text: "🎮 Labirinto - 2", link: "/lezioni/lezione4/labirinto-2"},
 
         ]

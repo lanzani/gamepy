@@ -44,7 +44,7 @@ Torniamo ora sul file `main.py` e diciamo a python di usare la funzionalità tar
 import turtle, campo, random
 ```
 
-## Step 1: Creare le tartarughe
+## Passo 1: Creare le tartarughe
 
 Ora creiamo la prima tartaruga che parteciperà alla gara.
 
@@ -70,7 +70,7 @@ tartaruga_blu.goto(-180, 100)
 tartaruga_blu.pendown()
 ```
 
-## Step 2: Far muovere le tartarughe
+## Passo 2: Far muovere le tartarughe
 
 Ora facciamo muovere le tartarughe in avanti di un numero casuale di passi.
 
@@ -82,7 +82,7 @@ while True:
   tartaruga_blu.forward(random.randint(1,8))
 ```
 
-## Step 3: Determinare il vincitore
+## Passo 3: Determinare il vincitore
 
 Per determinare il vincitore, dobbiamo controllare se una delle due tartarughe ha raggiunto la fine del percorso.
 
