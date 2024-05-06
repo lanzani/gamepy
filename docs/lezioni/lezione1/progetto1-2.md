@@ -101,7 +101,8 @@ if risposta == "parigi":
 else:
     print("Risposta sbagliata!")
 
-print("Il tuo punteggio è: " + punteggio)
+print("Il tuo punteggio è: ")
+print(punteggio)
 
 ```
 

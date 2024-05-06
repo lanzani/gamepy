@@ -23,9 +23,9 @@ const lezioniSidebar = [
     {
         text: "Lezione 3", collapsed: true, items: [
             {text: "🎮 Quiz - 1 (ripasso)", link: "/lezioni/lezione1/progetto1-1"},
-            {text: "🎮 Quiz - 2 (ripasso)", link: "/lezioni/lezione1/progetto1-2"},
+            // {text: "🎮 Quiz - 2 (ripasso)", link: "/lezioni/lezione1/progetto1-2"},
             {text: "🎮 Carta, forbice, sasso - 1", link: "/lezioni/lezione2/progetto2-1"},
-            {text: "📘 Condizioni 2", link: "/lezioni/lezione2/condizioni2"},
+            // {text: "📘 Condizioni 2", link: "/lezioni/lezione2/condizioni2"},
             {text: "🎮 Carta, forbice, sasso - 2", link: "/lezioni/lezione2/progetto2-2"},
         ]
     },
@@ -33,8 +33,6 @@ const lezioniSidebar = [
         text: "Lezione 4", collapsed: true, items: [
             {text: "📐 Grafica", link: "/lezioni/lezione4/turtle-1"},
             {text: "🎮 Labirinto - 1", link: "/lezioni/lezione4/labirinto-1"},
-            // {text: "📘 Cicli", link: "/lezioni/lezione4/cicli"},
-            // {text: "🎮 Labirinto - 2", link: "/lezioni/lezione4/labirinto-2"},
 
         ]
     },
@@ -42,17 +40,19 @@ const lezioniSidebar = [
         text: "Lezione 5", collapsed: true, items: [
             {text: "🎮 Labirinto - 2", link: "/lezioni/lezione4/labirinto-2"},
             {text: "🎮 Gara", link: "/lezioni/lezione5/gara-1"}
-            // {text: "📘 Cicli", link: "/lezioni/lezione4/cicli"},
-            // {text: "🎮 Labirinto - 2", link: "/lezioni/lezione4/labirinto-2"},
 
         ]
     },
     {
-        text: "Lezione 6", collapsed: false, items: [
+        text: "Lezione 6", collapsed: true, items: [
             {text: "🎮 Gara", link: "/lezioni/lezione5/gara-1"},
-            // {text: "🎮 Lettere", link: "/lezioni/lezione6/lettere-1"},
-            {text: "📘 Cicli", link: "/lezioni/lezione4/cicli"}
-            // {text: "🎮 Labirinto - 2", link: "/lezioni/lezione4/labirinto-2"},
+
+        ]
+    },
+    {
+        text: "Lezione 7", collapsed: false, items: [
+            {text: "🎮 Indovina il Numero", link: "/lezioni/lezione7/indovina-numero"},
+
 
         ]
     }
