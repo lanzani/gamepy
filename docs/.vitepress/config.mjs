@@ -22,10 +22,7 @@ const lezioniSidebar = [
     },
     {
         text: "Lezione 3", collapsed: true, items: [
-            {text: "🎮 Quiz - 1 (ripasso)", link: "/lezioni/lezione1/progetto1-1"},
-            // {text: "🎮 Quiz - 2 (ripasso)", link: "/lezioni/lezione1/progetto1-2"},
             {text: "🎮 Carta, forbice, sasso - 1", link: "/lezioni/lezione2/progetto2-1"},
-            // {text: "📘 Condizioni 2", link: "/lezioni/lezione2/condizioni2"},
             {text: "🎮 Carta, forbice, sasso - 2", link: "/lezioni/lezione2/progetto2-2"},
         ]
     },
@@ -50,7 +47,7 @@ const lezioniSidebar = [
         ]
     },
     {
-        text: "Lezione 7", collapsed: false, items: [
+        text: "Lezione 7", collapsed: true, items: [
             {text: "🎮 Indovina il Numero", link: "/lezioni/lezione7/indovina-numero"},
 
 

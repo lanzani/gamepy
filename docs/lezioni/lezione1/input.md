@@ -1,15 +1,15 @@
 # Input
 
-Ora che sappiamo come creare e modificare le variabili, possiamo chiedere all'utente di inserire un valore per una
-variabile. Per fare ciò, possiamo usare la funzione `input()`:
+Ora che sappiamo come creare e modificare le variabili, possiamo chiedere all'utente di inserire qualcosa in una
+scatola. Per fare ciò, possiamo usare la funzione `input()`:
 
 ```python
 nome = input("Inserisci il tuo nome: ")
 print(nome)
 ```
 
-In questo esempio, chiediamo all'utente di inserire il suo nome e lo memorizziamo nella variabile `nome`. Poi
-lo stampiamo a schermo.
+In questo esempio, la prima istruzione chiede all'utente di inserire il suo nome che viene inserito nella scatola
+chiamata `nome`. Poi nella seconda istruzione stampiamo a schermo il contenuto della scatola.
 
 Quando eseguiamo questo programma, vedremo qualcosa del genere:
 
@@ -17,8 +17,6 @@ Quando eseguiamo questo programma, vedremo qualcosa del genere:
 Inserisci il tuo nome: Mario
 Mario
 ```
-
-Come puoi vedere, il programma chiede all'utente di inserire il suo nome e poi lo stampa a schermo.
 
 Se vogliamo chiedere all'utente di inserire più di un valore, possiamo farlo in questo modo:
 

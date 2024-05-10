@@ -12,25 +12,27 @@ nome = "Mario"
 
 In questo esempio, abbiamo creato una variabile chiamata `nome` e abbiamo messo al suo interno la parola "Mario".
 
-Come puoi vedere, creare una variabile è molto semplice: basta scrivere un nome per la variabile e usare il simbolo `=`
-per assegnare un valore.
+Come puoi vedere, creare una scatola è molto semplice: basta scegliere un nome e usare il simbolo `=`
+per inserirci qualcosa dentro.
 
-Se vogliamo vedere il valore della variabile, possiamo farlo stampando il suo nome:
+Se vogliamo vedere il contenuto della scatola, possiamo farlo scrivendo il nome della scatola tra le parentesi tonde
+dell'istruzione `print`, come in questo esempio:
 
 ```python
 print(nome)
 ```
 
-Ora, cosa succede se vogliamo cambiare il valore della variabile? È molto semplice:
+Ora, cosa succede se vogliamo cambiare il contenuto della scatola? È molto semplice:
 
 ```python
 nome = "Mario"
 nome = "Luigi"
 ```
 
-In questo esempio, abbiamo cambiato il valore della variabile `nome` da "Mario" a "Luigi".
+In questo esempio, abbiamo cambiato il contenuto della scatola `nome` da "Mario" a "Luigi".
 
-Se vogliamo vedere il nuovo valore della variabile, possiamo farlo stampando il suo nome:
+Se vogliamo vedere il nuovo contenuto, possiamo farlo come prima, scrivendo il nome della scatola tra le parentesi tonde
+dell'istruzione `print`:
 
 ```python
 print(nome)
@@ -43,9 +45,6 @@ Luigi
 ```
 
 Questo perché abbiamo cambiato il valore della variabile `nome` da "Mario" a "Luigi".
-
-Le variabili possono contenere diversi tipi di dati, come numeri, parole, liste e molto altro. Vedremo più avanti come
-utilizzare le variabili con i diversi tipi di dati.
 
 ## 🧩 Esercizio 1.2
 

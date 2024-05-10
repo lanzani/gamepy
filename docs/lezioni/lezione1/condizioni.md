@@ -7,7 +7,7 @@ Ora inizia la parte interessante: le condizioni.
 Una "condizione" è come una domanda che viene fatta al computer.
 
 La risposta di queste domande può essere solo **vero** o **falso**, non ci può essere altra risposta. Se una domanda ha
-una risposta diversa da vero o falso, allora non è una "condizione" e il computer non sarà di aiuto.
+una risposta diversa da vero o falso, allora non è una "condizione" e il computer non capirà.
 
 L'abilità del programmatore sta nel fare le **domande giuste** al computer.
 
@@ -34,7 +34,7 @@ diventare "intelligente".
 
 ## If
 
-La struttura base per le condizioni è l'`if`. In italiano si traduce come "se". L'if valuta una condizione e possono
+L'istruzione per le condizioni è l'`if`. In italiano si traduce come "se". L'if valuta una condizione e possono
 succedere le seguenti cose:
 
 - Se la condizione è **vera**, il blocco di codice sotto l'istruzione if viene eseguito
@@ -43,22 +43,21 @@ succedere le seguenti cose:
 
 ```python
 if condizione:
-    # Blocco di codice da eseguire se la condizione è vera
+    # Blocco di codice che viene eseguito solo se la condizione è vera
     istruzione1
     istruzione2
     ...
     
-# Se la condizione è falsa, il blocco di codice sotto l'if viene saltato
 ```
 
-Attento agli spazi! In Python gli spazi sono importanti, se non si mettono gli spazi correttamente il programma non
+Attento agli spazi! In Python gli spazi sono importanti, se non si mettono correttamente il programma non
 funzionerà.
 
 ::: tip
-In Python si usano 4 spazi per indentare il codice. Alcuni editor di testo _indentano_ automaticamente il codice.
+In Python si usano 4 spazi per spostare il codice a destra. Alcuni editor di testo spostano automaticamente il codice.
 :::
 
-Ad esempio, Proviamo a scrivere un programma che saluti soltanto chi si chiama federico.
+Ora proviamo a scrivere un programma che saluti soltanto chi si chiama federico.
 
 La condizione è **_"il tuo nome è federico?"_**.
 
@@ -90,9 +89,23 @@ L'istruzione `if` si legge così:
 Ricorda che negli if bisogna usare `==` e non `=`.
 :::
 
+Questo programma stampa:
+
+```
+Ciao Federico!
+```
+
+Se invece cambiamo il nome in "mario", il programma non stamperà nulla perché la condizione è falsa.
+
+```python
+
+nome = "mario"
+
+if nome == "federico":
+    print("Ciao Federico!")
+```
+
 ## If-else
-
-
 
 A volte si vuole eseguire un blocco di codice se la condizione è vera e un altro blocco di codice se la condizione è
 falsa. Ossia:

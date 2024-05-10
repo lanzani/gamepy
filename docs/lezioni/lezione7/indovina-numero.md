@@ -72,7 +72,8 @@ while True:
 Per rendere il gioco ancora più interessante, possiamo tenere conto dei tentativi fatti dal giocatore per indovinare il
 numero.
 
-Per fare ciò, creiamo una scatola `scatola_tentativi` e inizializziamola a 0. Ad ogni tentativo incrementiamo il valore di questa scatola di 1.
+Per fare ciò, creiamo una scatola `scatola_tentativi` e inizializziamola a 0. Ad ogni tentativo incrementiamo il valore
+di questa scatola di 1. Alla fine del gioco, stampiamo il numero di tentativi fatti.
 
 ```python
 
@@ -94,5 +95,6 @@ while True:
     
     if scatola_numero_giocatore < scatola_numero_da_indovinare:
         print("Il numero da indovinare è più grande.")
+        
 
 ```

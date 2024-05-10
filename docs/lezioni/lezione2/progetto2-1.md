@@ -28,7 +28,7 @@ Il programma stamperà chi ha vinto.
 Il programma chiederà all'utente di scegliere tra "carta", "forbice" e "sasso".
 :::
 
-Per fare questo, useremo la funzione `input()` e quello che l'utente scrive va salvato in una variabile
+Per fare questo, useremo la funzione `input()` e quello che l'utente scrive va salvato in una scatola
 chiamata `scelta_utente`.
 
 ```python:line-numbers
@@ -90,7 +90,7 @@ else:
             print("Hai perso! :(")
 ```
 
+# 🎉 Congratulazioni!
 
-# 🎉 Congratulazioni! 
 Hai realizzato il gioco "carta, forbice, sasso"!
 

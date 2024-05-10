@@ -33,7 +33,8 @@ Aggiungete anche le vostre altre domande.
 
 ## Passo 2
 
-Ora dobbiamo aggiungere un punteggio. Creiamo una variabile chiamata `punteggio` e inizializziamola a 0.
+Ora dobbiamo aggiungere un punteggio. Creiamo una scatola chiamata `punteggio` e inseriamo dentro il numero 0, questo
+perché all'inizio il punteggio è 0.
 
 ```python:line-numbers {1}
 punteggio = 0
